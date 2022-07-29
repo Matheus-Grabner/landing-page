@@ -41,7 +41,7 @@ body {
 }
 
 .imgconfig {
-    max-width: 100vh;
+    max-width: 90vh;
     display: flex;
     margin-top: -200px;
     flex-direction: column;
@@ -61,6 +61,23 @@ body {
     cursor: pointer;
     background: rgb(67, 114, 67);
     color: white;
+}
+
+@media (max-width:1238px) {
+    .conteudo-principal-imagem {
+        width: 0;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        max-width: 100vh;
+        margin-right: 18px;
+    }
+
+    .conteudo-principal-subtitulo {
+        max-width: 100vh;
+        margin-right: 18px;
+        font-size: 20px;
+    }
 }
 
 
