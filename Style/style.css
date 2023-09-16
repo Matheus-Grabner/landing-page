@@ -60,7 +60,6 @@ body {
     border: none;
     cursor: pointer;
     background: rgb(67, 114, 67);
-    color: white;
 }
 
 @media (max-width:1238px) {
@@ -80,6 +79,10 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
