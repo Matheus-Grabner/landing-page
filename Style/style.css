@@ -41,6 +41,20 @@ body {
     
 }
 
+.conteudo-principal-subtitulo2 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 61px;
+}
+
+.conteudo-principal-subtitulo3 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 61px;
+}
+
 .imgconfig {
     max-width: 90vh;
     display: flex;
@@ -56,11 +70,12 @@ body {
     padding: 10px;
     font-size: 17px;
     margin-left: 61px;
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 1px;
     border: none;
     cursor: pointer;
     background: rgb(67, 114, 67);
+    font-weight: 500;
 }
 
 @media (max-width:1238px) {
@@ -83,4 +98,8 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+p{
+    margin-bottom: -15px;
 }
