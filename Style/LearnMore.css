@@ -4,8 +4,24 @@
     font-family: 'Inter', sans-serif;
 }
 
+.cabecalho {
+    display: flex;
+    padding: 10px;
+}
+
+.cabecalho-titulo {
+    font-size: 38px;
+    font-weight: 700;
+    margin-left: 61px;
+    margin-top: 50px;
+}
+
+.cor-verde {
+    color: rgb(67, 114, 67);
+}
+
 footer{
-    background-color: #9370DB;
+    background-color: rgb(67, 114, 67);
     padding: 50px 0;
     margin-top: 550px;
     max-height: 350px;
@@ -75,6 +91,7 @@ footer{
     color: #415aca;
     background-color: white;
 }
+
 .footer-col .form-sub input{
     width: 100%;
     padding: 10px;
@@ -82,7 +99,7 @@ footer{
     outline: none;
     border: 1px solid white;
     color: white;
-    background-color: #9370DB;
+    background-color: rgb(67, 114, 67);
 }
 .footer-col .form-sub input::placeholder{
     color: white;
@@ -95,8 +112,12 @@ footer{
     outline: none;
     border: none;
     cursor: pointer;
-    color: #9370DB;
+    color: rgb(67, 114, 67);
     border-radius: 3px;
     font-weight: bold;
     background-color: white;        
+}
+
+.se-inscreva{
+    margin-top: 8px;
 }
