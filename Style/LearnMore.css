@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -48,12 +51,14 @@ footer{
     font-weight: 500;
     position: relative;
     text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
 }
 .footer-col ul{
     list-style: none;
 }
 .footer-col ul li{
     margin: 10px 0;
+    font-family: 'Varela Round', sans-serif;
 }
 .footer-col ul li a{
     font-size: 16px;
@@ -63,6 +68,7 @@ footer{
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
+    font-family: 'Varela Round', sans-serif;
 }
 .footer-col ul li a:hover{
     color: #cecdcd;
@@ -207,5 +213,57 @@ button:hover{
 
     100%{
         transform: scale(1.05);
+    }
+}
+
+/* Responsivo 1450px*/
+@media (max-width:1450px) {
+    .footer-col {
+        width: 50%;
+    }
+
+    .cabecalho {
+        width: 100%;
+    }
+
+    .cabecalho-titulo {
+        font-size: 25px;
+    }
+
+    .cabecalho-menu-item {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .conteudo-principal {
+        width: 65%;
+        margin-bottom: 200px;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 50px;
+    }
+
+    .conteudo-principal-subtitulo {
+        font-size: 17px;
+        padding: 15px;
+        font-weight: 200;
+    }
+
+    .lista-filho {
+        font-size: 16px;
+        margin-left: -10%;
+        padding: 5px;
+    }
+
+    .conteudo-secundario {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .conteudo-principal-imagem {
+        width: 0;
     }
 }
