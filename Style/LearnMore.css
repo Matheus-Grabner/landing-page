@@ -11,6 +11,7 @@
 .cabecalho {
     display: flex;
     padding: 10px;
+    gap: 32px;
 }
 
 .cabecalho-titulo {
@@ -26,6 +27,11 @@
     position: relative;  
     margin-right: 10px;
     
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
 }
 
 .icone-compra{
@@ -171,7 +177,14 @@ a{
     }
 
     .cabecalho {
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 24px;
+        color: rgb(41, 40, 40);
+        list-style: none;
+        text-decoration: none;
     }
 
     .cabecalho-titulo {
@@ -181,6 +194,13 @@ a{
     .cabecalho-menu-item {
         font-size: 13px;
         text-align: center;
+        display: flex;
+        gap: 32px;
+        font-weight: bold;
+        list-style: none;
+        text-decoration: none;
+        color: rgba(75,0,130);
+    }
     }
 
     .conteudo-principal {
@@ -214,7 +234,7 @@ a{
     .conteudo-principal-imagem {
         width: 0;
     }
-}
+
 
 .conteudo-principal-escrito-botao{
     background: linear-gradient(to right, #4B0082, #9370DB);
