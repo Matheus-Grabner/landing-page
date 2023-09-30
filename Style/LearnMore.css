@@ -20,6 +20,31 @@
     margin-top: 50px;
 }
 
+.icones-header{
+    top: 61px;
+    margin-left: 1450px;
+    position: relative;  
+    margin-right: 10px;
+    
+}
+
+.icone-compra{
+    width: 25px;
+    height: 23px;
+    cursor: pointer;
+    margin-top: 8px;
+    position: absolute;
+    padding-right: 50px;
+}
+
+.icone-compra2{
+    width: 25px;
+    height: 23px;
+    margin-left: right;
+    cursor: pointer;
+    position: absolute;
+}
+
 .cor-verde {
     color: rgb(67, 114, 67);
 }
@@ -74,9 +99,11 @@ footer{
     color: #cecdcd;
     padding-left: 10px;
 }
+
 .footer-col .medias-socias{
     margin-top: 30px;
 }
+
 .footer-col .medias-socias a{
     display: inline-flex;
     align-items: center;
@@ -90,6 +117,7 @@ footer{
     border: 1px solid white;
     transition: all 0.5s ease;
 }
+
 .footer-col .medias-socias a i{
     font-size: 20px;
 }
@@ -107,6 +135,7 @@ footer{
     border: 1px solid white;
     color: white;
     background-color: rgb(67, 114, 67);
+    font-family: 'Varela Round', sans-serif;
 }
 .footer-col .form-sub input::placeholder{
     color: white;
@@ -122,7 +151,8 @@ footer{
     color: rgb(67, 114, 67);
     border-radius: 3px;
     font-weight: bold;
-    background-color: white;        
+    background-color: white;    
+    font-family: 'Varela Round', sans-serif;    
 }
 
 a{
@@ -131,6 +161,7 @@ a{
 
 .se-inscreva{
     margin-top: 8px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /* Responsivo 1450px*/
