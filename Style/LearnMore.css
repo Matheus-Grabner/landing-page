@@ -26,6 +26,11 @@
     margin-top: 50px;
 }
 
+.busca{
+    border-radius: 0;
+    border-width: 1px;
+}
+
 .icones-header{
     top: 61px;
     margin-left: 1450px;
@@ -41,12 +46,9 @@
 }
 
 .cabecalho-menu-item {
-    font-size: 16px;
-    font-weight: bold;
-    list-style: none;
-    text-decoration: none;
-    color: black;
     margin-top: 55px;
+    height: 21px;
+    cursor: pointer;
 }
 
 .icone-compra{
@@ -263,6 +265,7 @@ button:hover{
 
     .cabecalho {
         width: 100%;
+        position: relative;
     }
 
     .cabecalho-titulo {
