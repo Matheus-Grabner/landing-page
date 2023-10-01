@@ -26,9 +26,6 @@
     margin-top: 50px;
 }
 
-.busca{
-   
-}
 
 .icones-header{
     top: 61px;
@@ -59,12 +56,22 @@
     padding-right: 50px;
 }
 
-.icone-compra2{
+.icone-compra2 {
     width: 25px;
     height: 23px;
     margin-left: right;
     cursor: pointer;
     position: absolute;
+}
+
+.texto-produtos {
+    margin-left: 260px;
+    margin-top: 120px;
+}
+
+.texto-principal {
+    font-size: 24px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .cor-verde {
