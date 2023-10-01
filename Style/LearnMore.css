@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 .cabecalho {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     padding: 10px;
-    gap: 32px;
+    color: rgb(41, 40, 40);
+    list-style: none;
+    text-decoration: none;
 }
 
 .cabecalho-titulo {
     font-size: 38px;
     font-weight: 700;
-    margin-left: 61px;
+    margin-left: -310px;
     margin-top: 50px;
 }
 
@@ -32,6 +37,16 @@
 .cabecalho-menu{
     display: flex;
     gap: 32px;
+    margin-right: -308px;
+}
+
+.cabecalho-menu-item {
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-top: 55px;
 }
 
 .icone-compra{
@@ -61,11 +76,13 @@ footer{
     margin-top: 550px;
     max-height: 350px;
 }
+
 .container-footer{
     max-width: 1400px;
     padding: 0 4%;
     margin: auto;
 }
+
 .row-footer{
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +92,7 @@ footer{
     width: 25%;
     padding: 0 15px;
 }
+
 .footer-col h4{
     font-size: 22px;
     color: white;
@@ -84,13 +102,16 @@ footer{
     text-transform: uppercase;
     font-family: 'Varela Round', sans-serif;
 }
+
 .footer-col ul{
     list-style: none;
 }
+
 .footer-col ul li{
     margin: 10px 0;
     font-family: 'Varela Round', sans-serif;
 }
+
 .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
@@ -101,6 +122,7 @@ footer{
     transition: all 0.3s ease;
     font-family: 'Varela Round', sans-serif;
 }
+
 .footer-col ul li a:hover{
     color: #cecdcd;
     padding-left: 10px;
@@ -170,39 +192,6 @@ a{
     font-family: 'Varela Round', sans-serif;
 }
 
-/* Responsivo 1450px*/
-@media (max-width:1450px) {
-    .footer-col {
-        width: 50%;
-    }
-
-    .cabecalho {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 24px;
-        color: rgb(41, 40, 40);
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .cabecalho-titulo {
-        font-size: 25px;
-    }
-
-    .cabecalho-menu-item {
-        font-size: 13px;
-        text-align: center;
-        display: flex;
-        gap: 32px;
-        font-weight: bold;
-        list-style: none;
-        text-decoration: none;
-        color: rgba(75,0,130);
-    }
-    }
-
     .conteudo-principal {
         width: 65%;
         margin-bottom: 200px;
@@ -234,7 +223,6 @@ a{
     .conteudo-principal-imagem {
         width: 0;
     }
-
 
 .conteudo-principal-escrito-botao{
     background: linear-gradient(to right, #4B0082, #9370DB);
