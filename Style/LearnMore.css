@@ -56,12 +56,8 @@
     padding-right: 50px;
 }
 
-.icone-compra2 {
-    width: 25px;
-    height: 23px;
-    margin-left: right;
-    cursor: pointer;
-    position: absolute;
+.selecao{
+    border-radius: 100;
 }
 
 .texto-produtos {
