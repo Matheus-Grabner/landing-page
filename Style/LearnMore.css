@@ -60,12 +60,14 @@
     border-radius: 100;
 }
 
+dsad
+
 .selecao-itens{
     display: flex;
     gap: 32px;
-    margin-left: 650px;
+    margin-left: 750px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     list-style: none;
     margin-top: 20px;
     text-transform: uppercase;
