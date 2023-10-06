@@ -60,14 +60,12 @@
     border-radius: 100;
 }
 
-dsad
-
 .selecao-itens{
     display: flex;
     gap: 32px;
     margin-left: 750px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     list-style: none;
     margin-top: 20px;
     text-transform: uppercase;
@@ -86,8 +84,26 @@ dsad
 }
 
 .texto-principal {
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Varela Round', sans-serif;
+}
+
+.produtos-caixa {
+    background-color: rgb(67, 114, 67);
+    padding: 50px 0;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.produtos {
+    background-color: white;
+    display: flex;
+    gap: 160px;
+    margin-left: 400px;
+}
+
+.produtos-item {
+    border: 10px;
 }
 
 .cor-verde {
@@ -97,7 +113,7 @@ dsad
 footer{
     background-color: rgb(67, 114, 67);
     padding: 50px 0;
-    margin-top: 550px;
+    margin-top: 100px;
     max-height: 350px;
 }
 
