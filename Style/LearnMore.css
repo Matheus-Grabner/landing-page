@@ -99,11 +99,16 @@
     background-color: white;
     display: flex;
     gap: 160px;
-    margin-left: 400px;
+    
 }
 
 .produtos-item {
     border: 10px;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    border-color: black;
+    text-align: center;
 }
 
 .cor-verde {
