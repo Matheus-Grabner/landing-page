@@ -89,26 +89,44 @@
 }
 
 .produtos-caixa {
-    background-color: rgb(67, 114, 67);
     padding: 50px 0;
     height: 700px;
     margin-top: 50px;
 }
 
 .produtos {
-    background-color: white;
     display: flex;
-    gap: 160px;
-    
+    gap: 100px;
+    margin-left: 120px;
+    margin-top: 55px;
 }
 
 .produtos-item {
-    border: 10px;
-    border-radius: 10px;
     height: 300px;
-    width: 400px;
+    width: 250px;
     border-color: black;
+    border: 30px;
     text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    border: 2px solid #000;
+    background-color: white;
+}
+
+.produtos-tem h4 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#produto-titulo {
+    margin-top: 20px;
+}
+
+.produto-botao {
+    margin-top: 210px;
+    font-size: 50px;
+}
+
+.produtobotao {
+    margin-top: 210px;
 }
 
 .cor-verde {
