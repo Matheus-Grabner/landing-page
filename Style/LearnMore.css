@@ -96,16 +96,17 @@
 
 .produtos {
     display: flex;
-    gap: 100px;
-    margin-left: 120px;
+    gap: 30px;
+    padding: 35px;
     margin-top: 55px;
 }
 
 .produtos-item {
-    height: 300px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     border-color: black;
-    border: 30px;
+    
+    border-radius: 25px;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
     border: 2px solid #000;
@@ -132,6 +133,7 @@
     color: white;
     width: 90px;
     height: 22px;
+    
 }
 
 .cor-verde {
