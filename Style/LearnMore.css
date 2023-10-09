@@ -121,12 +121,13 @@
 }
 
 .produto-botao {
-    margin-top: 210px;
+    margin-top: 180px;
     font-size: 50px;
 }
 
 .produtobotao {
     margin-top: 210px;
+    border-radius: 8px;
 }
 
 .cor-verde {
@@ -136,7 +137,7 @@
 footer{
     background-color: rgb(67, 114, 67);
     padding: 50px 0;
-    margin-top: 100px;
+    margin-top: 20px;
     max-height: 350px;
 }
 
