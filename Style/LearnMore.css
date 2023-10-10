@@ -99,18 +99,25 @@
     gap: 30px;
     padding: 35px;
     margin-top: 55px;
+    margin-left: 150px;
 }
 
 .produtos-item {
     height: 350px;
     width: 350px;
-    border-color: black;
-    
     border-radius: 25px;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
-    border: 2px solid #000;
+    border: 2px solid rgb(164, 164, 164);
     background-color: white;
+    
+}
+
+.produtos-fav {
+    margin-top: 55px;
+    height: 21px;
+    cursor: pointer;
+    
 }
 
 .produtos-tem h4 {
@@ -127,7 +134,7 @@
 }
 
 .produtobotao {
-    margin-top: 210px;
+    margin-top: 240px;
     border-radius: 10px;
     background-color: #000;
     color: white;
