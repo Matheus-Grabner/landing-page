@@ -139,8 +139,9 @@
 
 .linha {
     width: 100%;
-    height: 1px; /* Você pode ajustar a altura da linha conforme desejado */
-    background-color: #000; /* Cor da linha (neste caso, preto) */
+    height: 1.5px;
+    background-color: #ff0000;
+    margin-top: 30px;
 }
 
 .cor-verde {
