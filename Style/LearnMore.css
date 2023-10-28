@@ -118,14 +118,7 @@
     font-family: 'Varela Round', sans-serif;
     border: 2px solid rgb(164, 164, 164);
     background-color: white;
-    
-}
-
-.produtos-fav {
-    margin-top: 55px;
-    height: 21px;
-    cursor: pointer;
-    
+    box-shadow: 0 0 5px rgba(24, 24, 24, 0.5);
 }
 
 .produtos-tem h4 {
@@ -138,10 +131,14 @@
 
 .produtobotao {
     margin-top: 240px;
-    background-color: rgb(67, 114, 67);
+    background-color: rgb(0, 0, 0);
     color: white;
     width: 90px;
     height: 22px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgb(53, 53, 53);
+    border-radius: 9px;
 }
 
 .cor-verde {
