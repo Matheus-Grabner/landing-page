@@ -1,5 +1,5 @@
 # Landing Page.
-Um modelo de site que uso para aprimorar códigos.
+Um modelo de site para clientes.
 
 #Atualizações:
 

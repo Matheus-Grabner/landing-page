@@ -6,6 +6,7 @@
 
 body {
     background-color: white;
+    max-height: 100vh;
 }
 
 .cabecalho {
@@ -23,13 +24,19 @@ body {
 .conteudo {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
+
+/* .conteudo-principal-escrito {
+    line-height: 1rem;
+} */
 
 .conteudo-principal-escrito-titulo {
     padding: 10px;
     font-size: 55px;
     margin-left: 61px;
     margin-top: 25px;
+    margin-bottom: -15px;
 }
 
 .conteudo-principal-subtitulo {
@@ -37,26 +44,16 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-left: 61px;
-    margin-top: 22px;
-    
+    margin-top: 0.8rem;
+    line-height: 1.2rem;
 }
 
-.conteudo-principal-subtitulo2 {
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 61px;
-}
-
-.conteudo-principal-subtitulo3 {
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 61px;
+.conteudo-principal-imagem {
+    height: 100%;
 }
 
 .imgconfig {
-    max-width: 90vh;
+    width: 100vh;
     display: flex;
     margin-top: -200px;
     flex-direction: column;
@@ -68,7 +65,7 @@ body {
 
 .conteudo-principal-escrito-botao {
     padding: 10px;
-    font-size: 17px;
+    font-size: 1rem;
     margin-left: 61px;
     margin-top: 25px;
     border-radius: 1px;
@@ -78,7 +75,38 @@ body {
     font-weight: 500;
 }
 
-@media (max-width:1238px) {
+.conteudo-principal-escrito-botao a {
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background: rgb(62, 100, 62);
+}
+
+/* Para a barra de rolagem em navegadores baseados em Webkit */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da barra de rolagem */
+    height: 8px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Cor da parte deslizante da barra */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Cor do trilho da barra de rolagem */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+}
+
+/* @media (max-width:1238px) {
     .conteudo-principal-imagem {
         width: 0;
     }
@@ -93,13 +121,4 @@ body {
         margin-right: 18px;
         font-size: 20px;
     }
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-p{
-    margin-bottom: -15px;
-}
+} */
