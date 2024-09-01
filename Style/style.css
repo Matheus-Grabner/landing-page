@@ -36,6 +36,7 @@ body {
     font-size: 55px;
     margin-left: 61px;
     margin-top: 25px;
+    margin-right: 61px;
     margin-bottom: -15px;
 }
 
@@ -44,6 +45,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-left: 61px;
+    margin-right: 61px;
     margin-top: 0.8rem;
     line-height: 1.2rem;
 }
@@ -107,6 +109,8 @@ body {
 }
 
 /* @media (max-width:1238px) {
+
+
     .conteudo-principal-imagem {
         width: 0;
     }
@@ -122,3 +126,56 @@ body {
         font-size: 20px;
     }
 } */
+
+/* Adicione isso ao seu CSS */
+@media (max-width: 2560px) {
+    .imgconfig {
+        width: 80%;
+        display: flex;  
+        margin-top: -200px;
+        flex-direction: column;
+    }
+}
+
+/* Para telas menores que 768px (tamanho comum para tablets) */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito {
+        margin-bottom: 20px;
+    }
+
+    .conteudo-principal-imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgconfig {
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+/* Para telas menores que 480px (tamanho comum para smartphones) */
+@media (max-width: 480px) {
+    .cabecalho-titulo {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal-subtitulo {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal-escrito-botao {
+        margin-left: 20px;
+    }
+}
