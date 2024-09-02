@@ -31,10 +31,31 @@
                     coloridas flores para seu jardim, temos algo para todos os amantes de plantas.</p>
                 <p class="conteudo-principal-subtitulo">Quer você seja um jardineiro experiente ou um iniciante
                     entusiasta, estamos aqui para ajudá-lo a cultivar seu próprio paraíso verde.</p>
-                <!--Botão-->
-                <button class="conteudo-principal-escrito-botao" id="openModal">
-                    <a href="">Entramos em contato</a>
-                </button>
+
+                <a href="#" id="openModal"><button class="conteudo-principal-escrito-botao"><strong>Faça um
+                            orçamento</strong></button></a>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Preencha para entrarmos em contato com você:</h2>
+                        <form id="tabela">
+                            <label for="nome">Digite seu nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+
+                            <label for="email">Digite seu e-mail:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="telefone" id="telefone">Digite seu telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+
+                            <button type="submit" class="conteudo-principal-escrito-botao" id="openModal">
+                                Entramos em contato
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
             </div>
         </section>
@@ -52,6 +73,7 @@
         </div>
     </section>
 
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
