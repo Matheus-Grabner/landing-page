@@ -58,7 +58,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000; /* Aumente o valor do z-index */
     left: 0;
     top: 0;
     width: 100%;
@@ -69,21 +69,89 @@ body {
 }
 
 .modal-content {
-    background-color: rgba(211, 211, 211, 1);
+    background-color: #fff;
     margin: 5% auto;
-    color: black;
-    padding: 30px;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1001; /* Certifique-se de que o conteúdo do modal também tenha um valor alto */
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.modal-content button[type="submit"] {
+    background-color: rgb(67, 114, 67);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.modal-botao {
+    background-color: #fff;
+    color: rgb(31, 30, 30);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    /* margin-left: 70px; */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.modal-botao:hover {
+    background: rgb(197, 197, 197);
 }
 
 label {
     display: block;
     margin-bottom: 3px;
     font-weight: 400;
+    margin-top: 12px;
 }
+
+/* .modal-content h2 {
+    font-size: 30px;
+    width: 67%;
+    line-height: 1.9rem;
+} */
 
 input[type="text"],
 input[type="email"],
@@ -105,17 +173,16 @@ input[type="tel"]:focus {
 }
 
 .close {
-    color: #aaa;
-    float: right;
+    position: absolute;
+    top: 15px;
+    right: 15px;
     font-size: 28px;
-    font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
+    color: #666;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+.close:hover {
+    color: #f00;
 }
 
 .imgconfig {
@@ -130,26 +197,18 @@ input[type="tel"]:focus {
 }
 
 .conteudo-principal-escrito-botao {
-    padding: 10px;
-    font-size: 0.8rem;
-    margin-left: 61px;
-    margin-top: 25px;
-    border-radius: 1px;
+    background-color: rgb(67, 114, 67);
+    color: rgb(255, 255, 255);
     border: none;
+    border-radius: 6px;
     cursor: pointer;
-    background: rgb(67, 114, 67);
-    color: white;
-    /* Certifique-se de que o texto está branco */
-}
-
-.conteudo-principal-escrito-botao:hover {
-    background: rgb(62, 100, 62);
-}
-
-.conteudo-principal-escrito-botao a {
-    text-decoration: none;
-    color: white;
-    /* font-weight: 100; */
+    font-size: 0.9rem;
+    font-weight: 0;
+    transition: background-color 0.3s ease;
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 65px;
 }
 
 .conteudo-principal-escrito-botao:hover {
@@ -189,6 +248,32 @@ input[type="tel"]:focus {
 }
 
 /* Para telas menores que 768px (tamanho comum para tablets) */
+@media (max-width: 1024px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito {
+        margin-bottom: 20px;
+    }
+
+    .conteudo-principal-imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgconfig {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+/* Para telas menores que 768px (tamanho comum para tablets) */
 @media (max-width: 768px) {
     .conteudo {
         flex-direction: column;
@@ -206,6 +291,11 @@ input[type="tel"]:focus {
     .imgconfig {
         margin-top: 0;
         width: 100%;
+    }
+
+    .modal-content {
+        width: 80%;
+        max-width: 400px;
     }
 }
 
@@ -228,5 +318,17 @@ input[type="tel"]:focus {
 
     .conteudo-principal-escrito-botao {
         margin-left: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modal-content {
+        width: 75%;
+        max-width: 300px;
     }
 }
